@@ -1,4 +1,4 @@
-# EADME.md
+# README.md
 
 ## 📝 Todoist from Command Line
 
