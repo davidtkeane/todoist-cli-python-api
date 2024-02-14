@@ -1,59 +1,99 @@
 # README.md
 
-## Todo PowerShell Script 📝
+## 📝 Todoist from Command Line
+
+
+<h1 align="center">Hi, guys! <img src="https://github.com/FujiwaraChoki/FujiwaraChoki/blob/main/assets/238178097-766d336d-b87d-44ba-807c-c51de2bc6b4d.gif" width="28px" alt="👋"></h1>
 
 ![PowerShell](https://img.shields.io/badge/-PowerShell-black?style=flat-square&logo=powershell)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/<username>/<repo>?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/jervis-ChatGPT?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues-raw/davidtkeane/jervis-ChatGPT?style=flat-square)
 
-![GitHub issues](https://img.shields.io/github/issues-raw/<username>/<repo>?style=flat-square)
+Languages
+[![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/davidtkeane)
 
-This is a robust and user-friendly PowerShell script that provides a simple yet powerful todo list functionality. It allows you to add, remove, and list todo items, and it also supports notifications.
+OS
+[![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=Linux)](https://github.com/davidtkeane)
+[![Windows](https://img.shields.io/badge/Windows-black?style=for-the-badge&logo=Windows)](https://github.com/davidtkeane)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49094051/227788148-a8ff8e06-86a4-41a6-aa53-8b7d6855360c.png"/>
+  <br>
+  <i>Image by MidJourney AI</i>
+  <br>
+  <a href="https://github.com/gia-guar/JARVIS-ChatGPT/tree/main">This is the URL to the image</a>
+  <br>
+  This is another version of Jervis called Jarvis by Gia-Guar, similar but a little different
+</p>
+
+
+## 🧐 About
+
+The Todoist CLI is a Python script that interacts with the Todoist API to provide a command-line interface for managing your Todoist tasks.
+
+The script uses the `todoist-python` package to interact with the Todoist API and the `python-dotenv` package to load environment variables from a .env file. The environment variable `TODOIST_API_KEY` is used to authenticate with the Todoist API.
+
+When you run the script, it displays a menu of options for managing your Todoist tasks. You can list, add, update, close, reopen, and delete tasks. You can also manage projects and comments. In addition, you can open the Todoist web app to view today's tasks and your active projects.
+
+Here's how it works:
+
+1. The script loads your Todoist API key from a .env file using `python-dotenv`.
+2. It creates a `TodoistAPI` object using your API key.
+3. It displays a menu of options and asks you to choose an option.
+4. Depending on your choice, it calls a function to perform the chosen operation. For example, if you choose to list tasks, it calls the `get_tasks` method on the `TodoistAPI` object and then prints the tasks.
+5. If an operation requires user input, such as adding a task, it prompts you to enter the necessary information.
+6. After performing an operation, it goes back to step 3, unless you choose to exit the script.
+
+This script provides a quick and easy way to manage your Todoist tasks from your terminal. It's especially useful if you prefer using the command line over a graphical user interface, or if you want to automate your task management with scripts.
 
 ## 🚀 Installation
 
-1. Clone this repository to your local machine using `git clone <repo-link>`.
-2. Navigate to the directory that contains the `Todo.ps1` script.
-3. Run the   `.\install.ps1` script in PowerShell.
-4. This will check if you have powershell installed.
-5. This script will then check if the module for making notifications.
-6. The script will then ask you for the PATH of where you saved these files to E.G. "C:\Users\You\todo" Replace `<path to Todo.ps1>` with the actual path to the `Todo.ps1` script.
-7. This script will then add the PATH to the PowerShell profile file, this is so you can just type "todo list" without running the file from it's folder all the time. See Usage for more details.
-8. Now the script is ready to be used on the terminal. Type "todo hello" and
-9. Commands can be found by typing "todo --help" or see below.
-10. The script will create 2 .xml files and one folder called xml and a error.log file and log folder.
+1. Clone this repository to your local machine.
+2. Install the required Python packages using pip:
+
+```bash
+pip install todoist-python python-dotenv
+```
+
+3. Create a .env file in the same directory as the script and add your Todoist API key:
+4. TODOIST_API_KEY=your_api_key
+5. Replace `your_api_key` with your actual Todoist API key.
+6. Run the script from your terminal with the following command:
+7. Replace `your_api_key` with your actual Todoist API key.
 
 ## 📖 Usage
 
-To use the `Todo.ps1` script, you can run the following command in PowerShell:
+To use the `todoist_list.py` script, you can run the following command in PowerShell:
 
 ```powershell
-C:\todo hello
-C:\todo --help
-C:\todo add "Hello-There"
-C:\todo notify 10 1 minutes
-C:\todo done
+Run the script from your terminal with the following command:
+
+python todoist_list.py
 ```
 
-📚 Available Commands
+## 📚 Available Commands in Program
 
-* `todo add <item>`: Add a new todo item.
-* `todo rm <item>`: Remove a todo item by its content.
-* `todo list`: List all todo items with timestamps.
-* `todo list`-all: List all todo items without the time being shown.
-* `todo done`: List all todo done items.
-* `todo hello`: Shows you the welcome screen.
-* `todo --help`: Shows you the help menu with these commands.
-* `todo notify <id> <time> <unit>`: Set a notification for a todo item. The `<id>` is the number of the todo item, `<time>` is the time before the notification, and `<unit>` is the unit of time (e.g., `minutes`, `hours, days`).
+==============================
+
+1. List projects
+2. Add project
+3. Delete project
+4. List tasks
+5. Add task
+6. Update task
+7. Close task
+8. Reopen task
+9. Delete task
+10. List comments
+11. Add comment
+12. Update comment
+13. Delete comment
+14. View today's tasks online
+15. View projects online
+16. Exit
 
 ## 🛠️ Functions
-
-* `Show-Help`: Show the help information.
-* `Set-TodoNotification`: Set a notification for a todo item.
-
-## 📝 Error Logging
-
-If an error occurs during the execution of the script, the error message and the line of code that caused the error will be written to the `error.log` file.
 
 ## 🤝 Contributing
 
