@@ -23,9 +23,11 @@ OS
   <br>
   <i>Image by MidJourney AI</i>
   <br>
+    This is Jervis by Gia-Guar.
+  <br>
   <a href="https://github.com/gia-guar/JARVIS-ChatGPT/tree/main">This is the URL to the Jarvis Github Project</a>
   <br>
-  This is Jervis by Gia-Guar.
+  This is Jervis by me.
   <br>
   <a href="https://github.com/davidtkeane/todoist-cli-python-api/tree/main">This is the URL to the my Jervis Github Project</a>
   <p>This Python script is for a voice interface chatbot named Jervis. It uses OpenAI's GPT-3.5-turbo-instruct model to respond to user input. The user can interact with the chatbot through speech, and the chatbot responds with text and/or speech. The conversation can be saved as an MP3 file and emailed to a specified address. The conversation is also logged to a MongoDB database.</p>
