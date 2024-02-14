@@ -27,7 +27,7 @@ OS
   <br>
   This is another version of Jervis called Jarvis by Gia-Guar, similar but a little different to mine.
   <br>
-  <a href="https://github.com/davidtkeane/Jervis-ChatGPT">This is the URL to the my Jervis Github Project</a>
+  <a href="https://github.com/davidtkeane/todoist-cli-python-api/tree/main">This is the URL to the my Jervis Github Project</a>
   <p>This Python script is for a voice interface chatbot named Jervis. It uses OpenAI's GPT-3.5-turbo-instruct model to respond to user input. The user can interact with the chatbot through speech, and the chatbot responds with text and/or speech. The conversation can be saved as an MP3 file and emailed to a specified address. The conversation is also logged to a MongoDB database.</p>
   <br>
 </p>
