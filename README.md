@@ -9,31 +9,40 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/jervis-ChatGPT?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues-raw/davidtkeane/jervis-ChatGPT?style=flat-square)
 
-Languages
+<b>Languages</b>
 
 [![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/davidtkeane)
 
-OS
+<b>OS</b>
 
 [![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=Linux)](https://github.com/davidtkeane)
 [![Windows](https://img.shields.io/badge/Windows-black?style=for-the-badge&logo=Windows)](https://github.com/davidtkeane)
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/49094051/227788148-a8ff8e06-86a4-41a6-aa53-8b7d6855360c.png"/>
-  <br>
-  <i>Image by MidJourney AI</i>
-  <br>
-    This is Jervis by Gia-Guar.
-  <br>
-  <a href="https://github.com/gia-guar/JARVIS-ChatGPT/tree/main">This is the URL to the Jarvis Github Project</a>
-  <br>
-  This is Jervis by me.
-  <br>
-  <a href="https://github.com/davidtkeane/todoist-cli-python-api/tree/main">This is the URL to the my Jervis Github Project</a>
-  <p>This Python script is for a voice interface chatbot named Jervis. It uses OpenAI's GPT-3.5-turbo-instruct model to respond to user input. The user can interact with the chatbot through speech, and the chatbot responds with text and/or speech. The conversation can be saved as an MP3 file and emailed to a specified address. The conversation is also logged to a MongoDB database.</p>
-  <br>
+    <b>Welcome to Todoist online note taker uses with API!</b>
+    <br>
+    <br>
+    <i>
+        I'm Rangersmyth (internet name), and I'm currently learning Python and Bash coding.<br>
+    <br>
+    </i>
+    <br>
+
+<p align="center">
+  <img src="https://count.getloli.com/get/@rangersmyth?theme=gelbooru" />
 </p>
 
+<div align="center">
+<a href="https://github.com/davidtkeane" target="_blank">
+<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+</a>
+<a href="https://twitter.com/davidtkeane" target="_blank">
+<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
+</a>
+<a href="https://linkedin.com/in/sami-hindi-b31435248/" target="_blank">
+<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+</a>
+</div>
 
 ## 🧐 About
 
