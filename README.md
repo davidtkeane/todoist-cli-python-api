@@ -96,13 +96,20 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 ## 🚀 Now we are ready to launch
 
 1. Clone this repository to your local machine.
-2. Install the required Python packages using pip:
+2. run the install_todoist.py file as this will go step by step to instal the modules and also the ability to add the Todoist API key into the terminal and then that goes into the .env file for you. 
+3. This install_todoist.py will then ask you if you want to run the main file todoist.py
+4. you only need to run this file once.
+5. Normal way to run will be python todoist.py
+
+Or
+
+1. Install the required Python packages using pip:
 
 ```bash
 pip install todoist-python python-dotenv
 ```
-
-3. Create a .env file in the same directory as the script and add your Todoist API key:
+2. After install then get your Todoist key from the website.
+3. Copy the .env key into the .env file in the same directory.
 4. TODOIST_API_KEY=your_api_key
 5. Replace `your_api_key` with your actual Todoist API key.
 6. Run the script from your terminal with the following command:
