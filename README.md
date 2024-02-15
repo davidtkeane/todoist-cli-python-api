@@ -78,6 +78,23 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 
 ## 🚀 Installation
 
+## 🥷 Where to get the Todoist API key.
+
+1. Login with a new account or old account.
+2. Then go to today https://app.todoist.com/app/today
+3. Click your profile name and settings.
+4. Click Integrations
+5. Click Developer
+6. Copy API Token
+7. Add to .env file
+
+## Developer API Documentation
+
+1. Developing with Todoist https://developer.todoist.com/guides/#developing-with-todoist
+2. Todoist REST API. This is the code the script uses https://developer.todoist.com/rest/v2/#overview
+
+## 🚀 Now we are ready to launch
+
 1. Clone this repository to your local machine.
 2. Install the required Python packages using pip:
 
