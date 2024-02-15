@@ -88,7 +88,7 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 6. Copy API Token
 7. Add to .env file
 
-## Developer API Documentation
+## 💻 Developer API Documentation
 
 1. Developing with Todoist https://developer.todoist.com/guides/#developing-with-todoist
 2. Todoist REST API. This is the code the script uses https://developer.todoist.com/rest/v2/#overview
