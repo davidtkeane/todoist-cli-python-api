@@ -46,6 +46,35 @@
 
 ## 🧐 About
 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://sm.pcmag.com/t/pcmag_uk/review/t/todoist/todoist_wpyr.1920.jpg" alt="Todoist" class="center">
+
+    <p style="text-align: center;">
+        <a href="https://todoist.com/">Sign up for a Todoist account</a>
+    </p>
+
+    <p>
+        Todoist is a powerful task management app that helps you organize your life. With Todoist, you can create tasks and projects, set due dates and priorities, and even assign tasks to others. Todoist syncs across all your devices, so you can manage your tasks wherever you are. It also integrates with many other apps and services, including Gmail, Google Calendar, Slack, Amazon Alexa, and more. Whether you're managing a team, writing an epic screenplay, or just making a grocery list, Todoist is there to help you achieve more every day.
+    </p>
+
+</body>
+</html>
+
+
 The Todoist CLI is a Python script that interacts with the Todoist API to provide a command-line interface for managing your Todoist tasks.
 
 The script uses the `todoist-python` package to interact with the Todoist API and the `python-dotenv` package to load environment variables from a .env file. The environment variable `TODOIST_API_KEY` is used to authenticate with the Todoist API.
