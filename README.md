@@ -47,8 +47,6 @@
 ## 🧐 About
 
 
-<!DOCTYPE html>
-<html>
 <head>
     <style>
         .center {
@@ -72,7 +70,7 @@
     </p>
 
 </body>
-</html>
+
 
 
 The Todoist CLI is a Python script that interacts with the Todoist API to provide a command-line interface for managing your Todoist tasks.
