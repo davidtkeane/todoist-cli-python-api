@@ -4,6 +4,14 @@
 
 <h1 align="center">Hi, guys! <img src="https://github.com/FujiwaraChoki/FujiwaraChoki/blob/main/assets/238178097-766d336d-b87d-44ba-807c-c51de2bc6b4d.gif" width="28px" alt="👋"></h1>
 
+<p align="center">
+    <br>
+    <i>
+        I'm Rangersmyth (internet name), 18 May 2024, there is a few problems with the script, I am working on fixing it.<br>
+    </i>
+<p align="center">
+
+
 ![PowerShell](https://img.shields.io/badge/-PowerShell-black?style=flat-square&logo=powershell)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/jervis-ChatGPT?style=flat-square)
