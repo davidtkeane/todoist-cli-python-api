@@ -115,22 +115,22 @@ This script provides a quick and easy way to manage your Todoist tasks from your
    ```
 6. You will get this menu.
 
-   ![1722274706166](image/README/1722274706166.png)
+   ![1722274706166](image/1722274706166.png)
 7. The script will ask you for the Todoist API key in the terminal, then that is sent into the .env file for you.
 8. It shows you that The following modules are required:
 9. If the modules are installed it will say, if not it will ask you to install them.
 
-![1722278365823](image/README/1722278365823.png)
+![1722278365823](image/1722278365823.png)
 
 8. If the modules are not installed, it will asked you to install The todoist module is not installed.
    Do you want to install todoist? This module is safe and used by millions. (y/n)
 
    * Press y for yes.
-   * ![1722276030408](image/README/1722276030408.png)
+   * ![1722276030408](image/1722276030408.png)
 
      9. The script will then run the todoist_api_test.py file to establish if you are able to connect to Todo
 
-   ![1722278633930](image/README/1722278633930.png)
+   ![1722278633930](image/1722278633930.png)
 9. 
 10. Press y for yes run the script.
 
@@ -140,7 +140,7 @@ This script provides a quick and easy way to manage your Todoist tasks from your
     python todoist.py
     ```
 
-    ![1722276435961](image/README/1722276435961.png)
+    ![1722276435961](image/1722276435961.png)
 
 ## 📖 Usage
 
