@@ -1,13 +1,13 @@
 # Install instructions for todoist_api_test.py
 
-## Macbook Air M1
+## Macbook Air M1 and Macbook Pro M3
 
 ## Asus Rog Strix 2
 
 Works on:
 
 1. Windows PowerShell
-2. Macbook Terminal
+2. Macbook Terminal - Python Version 3.11.8
 
 ### Modules to install
 
@@ -17,6 +17,7 @@ Works on:
 - todoist
 - todoist_api_python
 - python-dotenv
+- tabulate
 
 ## Run the todoist_api_test.py
 

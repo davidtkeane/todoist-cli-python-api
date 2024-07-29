@@ -11,17 +11,16 @@
     </i>
 <p align="center">
 
-
 ![PowerShell](https://img.shields.io/badge/-PowerShell-black?style=flat-square&logo=powershell)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/jervis-ChatGPT?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues-raw/davidtkeane/jervis-ChatGPT?style=flat-square)
 
-<b>Languages</b>
+`<b>`Languages `</b>`
 
 [![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/davidtkeane)
 
-<b>OS</b>
+`<b>`OS `</b>`
 
 [![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=Linux)](https://github.com/davidtkeane)
 [![Windows](https://img.shields.io/badge/Windows-black?style=for-the-badge&logo=Windows)](https://github.com/davidtkeane)
@@ -53,7 +52,6 @@
 </div>
 
 ## 🧐 About
-
 
 <img src="https://sm.pcmag.com/t/pcmag_uk/review/t/todoist/todoist_wpyr.1920.jpg" alt="Todoist" class="center">
 
@@ -89,39 +87,71 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 ## 🥷 Where to get the Todoist API key.
 
 1. Login with a new account or old account.
-2. Then go to today https://app.todoist.com/app/today
+2. Then go to today [Todoist Website](https://app.todoist.com/app/today) for the API
 3. Click your profile name and settings.
 4. Click Integrations
 5. Click Developer
 6. Copy API Token
-7. Add to .env file
+7. Add to API Key when the install.py asks for it. The .env file will be created if the file is not there.
 
 ## 💻 Developer API Documentation
 
-1. Developing with Todoist https://developer.todoist.com/guides/#developing-with-todoist
+1. Developing with Todoist [website](https://developer.todoist.com/guides/#developing-with-todoist)
 2. Todoist REST API. This is the code the script uses https://developer.todoist.com/rest/v2/#overview
 
-## 🚀 Now we are ready to launch
+## 🚀 Now we are ready to Install and launch
 
 1. Clone this repository to your local machine.
-2. Run the install_todoist.py file as this will go step by step to install the modules and also the ability to add the Todoist API key into the terminal and then that goes into the .env file for you. 
-3. This install_todoist.py will then ask you if you want to run the main file todoist.py
-4. You only need to run this file once.
-5. The Normal way to run will be python todoist.py
 
-Or
+   ```
+    git clone https://github.com/davidtkeane/todoist-cli-python-api.git
+   ```
+2. First. Click here for the [Todoist Website](https://app.todoist.com/app/today) and get your API Key, then Copy the Key.
+3. The Menu has instructions on how to find the API key shown below.
 
-1. Install the required Python packages using pip:
+   ```
+   1. Login with a new account or old account.
+   2. Then go to today https://app.todoist.com/app/today
+   3. Click your profile name and settings.
+   4. Click Integrations
+   5. Click Developer
+   6. Copy API Token
+   7. Add to .env file
+   ```
+4. Run the install.py file. This will tell you if you have the modules needed installed.
+5. You only need to run install_todoist.py once per install.
 
-```bash
-pip install todoist-python python-dotenv
-```
-2. After install, get your Todoist key from the website.
-3. Copy the .env key into the .env file in the same directory.
-4. TODOIST_API_KEY=your_api_key
-5. Replace `your_api_key` with your actual Todoist API key.
-6. Run the script from your terminal with the following command:
-7. Replace `your_api_key` with your actual Todoist API key.
+   ```
+   python install_todoist.py
+   ```
+6. You will get this menu.
+
+   ![1722274706166](image/README/1722274706166.png)
+7. The script will ask you for the Todoist API key in the terminal, then that is sent into the .env file for you.
+8. It shows you that The following modules are required:
+9. If the modules are installed it will say, if not it will ask you to install them.
+
+![1722278365823](image/README/1722278365823.png)
+
+8. If the modules are not installed, it will asked you to install The todoist module is not installed.
+   Do you want to install todoist? This module is safe and used by millions. (y/n)
+
+   * Press y for yes.
+   * ![1722276030408](image/README/1722276030408.png)
+
+     9. The script will then run the todoist_api_test.py file to establish if you are able to connect to Todo
+
+   ![1722278633930](image/README/1722278633930.png)
+9. 
+10. Press y for yes run the script.
+
+    The Normal way to run the app after the install will be
+
+    ```
+    python todoist.py
+    ```
+
+    ![1722276435961](image/README/1722276435961.png)
 
 ## 📖 Usage
 
