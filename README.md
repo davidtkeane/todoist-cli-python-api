@@ -13,8 +13,8 @@
 
 ![PowerShell](https://img.shields.io/badge/-PowerShell-black?style=flat-square&logo=powershell)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/jervis-ChatGPT?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues-raw/davidtkeane/jervis-ChatGPT?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/todoist-cli-python-api)
+![GitHub issues](https://img.shields.io/github/issues-raw/davidtkeane/todoist-cli-python-api?style=flat-square)
 
 **Languages**
 
@@ -132,13 +132,14 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 
    ![1722278633930](image/1722278633930.png)
 9. Press y for yes run the script.
-10. The Normal way to run the app after the install will be
 
-    ```
-    python todoist.py
-    ```
+   The Normal way to run the app after the install will be
 
-    ![1722276435961](image/1722276435961.png)
+   ```
+   python todoist.py
+   ```
+
+   ![1722276435961](image/1722276435961.png)
 
 ## 📖 Usage
 
