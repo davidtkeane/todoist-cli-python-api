@@ -131,10 +131,8 @@ This script provides a quick and easy way to manage your Todoist tasks from your
      9. The script will then run the todoist_api_test.py file to establish if you are able to connect to Todo
 
    ![1722278633930](image/1722278633930.png)
-9. 
-10. Press y for yes run the script.
-
-    The Normal way to run the app after the install will be
+9. Press y for yes run the script.
+10. The Normal way to run the app after the install will be
 
     ```
     python todoist.py
