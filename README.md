@@ -7,7 +7,7 @@
 <p align="center">
     <br>
     <i>
-        I'm Rangersmyth (internet name), 18 May 2024, there is a few problems with the script, I am working on fixing it.<br>
+        I'm Rangersmyth (internet name), 29th July 2024, The Script has been testing on Macbook Pro M3 using Python version 3.11.8.<br>
     </i>
 <p align="center">
 
@@ -16,24 +16,13 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/jervis-ChatGPT?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues-raw/davidtkeane/jervis-ChatGPT?style=flat-square)
 
-`<b>`Languages `</b>`
+**Languages**
 
 [![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/davidtkeane)
 
-`<b>`OS `</b>`
+**OS**
 
-[![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=Linux)](https://github.com/davidtkeane)
-[![Windows](https://img.shields.io/badge/Windows-black?style=for-the-badge&logo=Windows)](https://github.com/davidtkeane)
-
-<p align="center">
-    <b>Welcome to Todoist online note taker uses with API!</b>
-    <br>
-    <br>
-    <i>
-        I'm Rangersmyth (internet name), and I'm currently learning Python and Bash coding.<br>
-    <br>
-    </i>
-    <br>
+[![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=Linux)](https://github.com/davidtkeane)[![Windows](https://img.shields.io/badge/Windows-black?style=for-the-badge&logo=Windows)](https://github.com/davidtkeane)[![Apple](https://img.shields.io/badge/AppleMac-black?style=for-the-badge&logo=Apple)](https://github.com/davidtkeane)
 
 <p align="center">
   <img src="https://count.getloli.com/get/@rangersmyth?theme=gelbooru" />
