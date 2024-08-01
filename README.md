@@ -13,7 +13,7 @@
   </i>
 </p>
 
-<p align="center"><img src="image.png" alt="DeathStar" width="50%">
+<p align="center"><img src="image/deathstar.png" alt="DeathStar" width="50%">
 </p>
 
 <p align="center">
