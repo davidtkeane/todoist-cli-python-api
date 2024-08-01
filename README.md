@@ -1,11 +1,8 @@
-**[**//**]**: **#** (This may be the most platform independent comment)
-
     😄 ❤️ 👍
 
 <p align="center">
   <img src="https://img.shields.io/badge/Todoist-E44332?style=for-the-badge&logo=todoist&logoColor=white" alt="Todoist Badge">
 </p>
-
 
 <h1 align="center">Hi, Welcome to Todoist CLI! <img src="https://github.com/FujiwaraChoki/FujiwaraChoki/blob/main/assets/238178097-766d336d-b87d-44ba-807c-c51de2bc6b4d.gif" width="28px" alt="👋"></h1>
 
