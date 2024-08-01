@@ -81,8 +81,9 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 1. The install.py file is inside the Help_files folder.
 2. The requirements.txt file is inside the Help_files folder.
 3. Extra Help to install Todoist file is inside the Help_files folder. File name is todoist_install_help.md
-4. API Key test file todoist_api_test.py is inside the Help_files folder.
-5. After everything is installed you can start the script by this comand.
+4. Get your API key. It's free. [Todoist Website to get your API Key](https://app.todoist.com/app/today)
+5. API Key test file todoist_api_test.py is inside the Help_files folder.
+6. After everything is installed you can start the script by this comand.
    ```python
    python todoist.py
    ```
