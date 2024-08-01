@@ -56,7 +56,6 @@
  <p>
         Todoist is a powerful task management app that helps you organize your life. With Todoist, you can create tasks and projects, set due dates and priorities, and even assign tasks to others. Todoist syncs across all your devices, so you can manage your tasks wherever you are. It also integrates with many other apps and services, including Gmail, Google Calendar, Slack, Amazon Alexa, and more. Whether you're managing a team, writing an epic screenplay, or just making a grocery list, Todoist is there to help you achieve more every day.
 </p>
-<br>
 
 I had an idea if I could connect Todoist to my original todo_list program I made (Not uploaded yet) for Powershell, the Powershell todo_list was finished, and I thought if I could connect my todo_list to Todoist. This script does not do that, this script is to let you control your Todoist from the terminal or command line. This script lets you do most things available with this code. I copied and pasted all the code from the Todoist API guide, and with the help of GitHUb CoPilot we arrived at this script. Please enjoy and upgrade and own it.
 
@@ -79,6 +78,15 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 
 ## 🚀 Installation
 
+1. The install.py file is inside the Help_files folder.
+2. The requirements.txt file is inside the Help_files folder.
+3. Extra Help to install Todoist file is inside the Help_files folder. File name is todoist_install_help.md
+4. API Key test file todoist_api_test.py is inside the Help_files folder.
+5. After everything is installed you can start the script by this comand.
+   ```python
+   python todoist.py
+   ```
+
 ## 🥷 Where to get the Todoist API key.
 
 1. Login with a new account or old account.
@@ -92,7 +100,8 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 ## 💻 Developer API Documentation
 
 1. Developing with Todoist [website](https://developer.todoist.com/guides/#developing-with-todoist)
-2. Todoist REST API. This is the code the script uses https://developer.todoist.com/rest/v2/#overview
+2. Todoist REST API. This is the link this script uses  `https://developer.todoist.com/rest/v2/#overview`
+3. When in the Todoist settings, you will find the REST API which is the https: link above to communicate over the internet.
 
 ## 🚀 Now we are ready to Install and launch
 
@@ -114,10 +123,10 @@ This script provides a quick and easy way to manage your Todoist tasks from your
    7. Add to .env file
    ```
 4. Run the install.py file. This will tell you if you have the modules needed installed.
-5. You only need to run install_todoist.py once per install.
+5. You only need to run install_todoist.py once per install. 
 
    ```
-   python install_todoist.py
+   python install.py
    ```
 6. You will get this menu.
 
@@ -192,7 +201,4 @@ This project is licensed under the MIT License.
 
 If you have any questions, feel free to reach out to me at rangersmyth.74@gmail.com
 
-
-**"markdown.styles": [**
-    "https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-]
+[![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=davidtkeane&theme=transparent)](https://github.com/FujiwaraChoki)
