@@ -1,22 +1,24 @@
-    😄 ❤️ 👍
 
+&nbsp;
 <p align="center">
   <img src="https://img.shields.io/badge/Todoist-E44332?style=for-the-badge&logo=todoist&logoColor=white" alt="Todoist Badge">
 </p>
 
 <h1 align="center">Hi, Welcome to Todoist CLI! <img src="https://github.com/FujiwaraChoki/FujiwaraChoki/blob/main/assets/238178097-766d336d-b87d-44ba-807c-c51de2bc6b4d.gif" width="28px" alt="👋"></h1>
 
-<p align="center">
-    <br>
-    <i>
-        I'm Rangersmyth (internet name), 29th July 2024, The Script has been testing on Macbook Pro M3 using Python version 3.11.8.<br>
-    </i>
-<p align="center">
+<p align="center" style="font-size: 16px;">
+  <br>
+  <i style="font-size: 14px;">
+    Hey, I'm Ranger and I have updated and tested on 29th July 2024.The Script has been testing on Macbook Pro M3 using Python version 3.11.8. This is now a fully working operating deathstar.<br><span title="Death Star" style="font-size: 64px;">&#x1F311;</span><br>
+  </i>
+</p>
+ 
+&nbsp;
 
 <p align="center">
   <img src="https://count.getloli.com/get/@rangersmyth?theme=gelbooru" />
 </p>
-
+ 
 <div align="center">
 <a href="https://github.com/davidtkeane" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
@@ -29,7 +31,19 @@
 </a>
 </div>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/todoist-cli-python-api?style=flat&color=blue&link=https%3A%2F%2Fshields.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/davidtkeane/todoist-cli-python-api?authorFilter=davidtkeane) [![License](https://camo.githubusercontent.com/a3ab4cecb6e0664ac7c82a19cab38b6efc4df6086df1d2d212f02d49925d4269/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)](http://badges.mit-license.org/)
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Microsoft-Windows%2011-0078D6?logo=windows&logoColor=0078D6&labelColor=white" alt="Windows 11">
+  <img src="https://img.shields.io/badge/Apple-macOS-000000?logo=apple&logoColor=white&labelColor=black" alt="macOS">
+  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&labelColor=white" alt="Linux">
+</p>
+<br>
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/davidtkeane/todoist-cli-python-api?style=flat&color=blue&link=https%3A%2F%2Fshields.io" alt="GitHub last commit">
+  <img src="https://img.shields.io/github/commit-activity/w/davidtkeane/todoist-cli-python-api?authorFilter=davidtkeane" alt="GitHub commit activity">
+  <a href="http://badges.mit-license.org/"><img src="https://camo.githubusercontent.com/a3ab4cecb6e0664ac7c82a19cab38b6efc4df6086df1d2d212f02d49925d4269/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265" alt="License" data-canonical-src="http://img.shields.io/:license-mit-blue.svg?style=flat-square"></a>
+</p>
 
 ## 🧐 About
 
