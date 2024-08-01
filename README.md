@@ -191,3 +191,8 @@ This project is licensed under the MIT License.
 ## 📞 Contact
 
 If you have any questions, feel free to reach out to me at rangersmyth.74@gmail.com
+
+
+**"markdown.styles": [**
+    "https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+]
