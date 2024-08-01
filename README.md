@@ -1,7 +1,5 @@
 # 📝 Todoist from Command Line
 
-## README.md
-
 <h1 align="center">Hi, guys! <img src="https://github.com/FujiwaraChoki/FujiwaraChoki/blob/main/assets/238178097-766d336d-b87d-44ba-807c-c51de2bc6b4d.gif" width="28px" alt="👋"></h1>
 
 <p align="center">
@@ -11,20 +9,15 @@
     </i>
 <p align="center">
 
-    
-
 ![GitHub last commit](https://img.shields.io/github/last-commit/davidtkeane/todoist-cli-python-api?style=flat&color=blue&link=https%3A%2F%2Fshields.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/davidtkeane/todoist-cli-python-api?authorFilter=davidtkeane) [![License](https://camo.githubusercontent.com/a3ab4cecb6e0664ac7c82a19cab38b6efc4df6086df1d2d212f02d49925d4269/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)](http://badges.mit-license.org/)
 
 **Languages and  **Operating Systems****
 
 [![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/davidtkeane)         [![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=Linux)](https://github.com/davidtkeane)[![Windows](https://img.shields.io/badge/Windows-black?style=for-the-badge&logo=Tower)](https://github.com/davidtkeane)[![Apple](https://img.shields.io/badge/AppleMac-black?style=for-the-badge&logo=Apple)](https://github.com/davidtkeane)
 
-
 <p align="center">
   <img src="https://count.getloli.com/get/@rangersmyth?theme=gelbooru" />
 </p>
-
-
 
 <div align="center">
 <a href="https://github.com/davidtkeane" target="_blank">
