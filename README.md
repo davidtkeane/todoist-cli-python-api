@@ -1,5 +1,5 @@
-
 &nbsp;
+
 <p align="center">
   <img src="https://img.shields.io/badge/Todoist-E44332?style=for-the-badge&logo=todoist&logoColor=white" alt="Todoist Badge">
 </p>
@@ -9,11 +9,12 @@
 <p align="center" style="font-size: 16px;">
   <br>
   <i style="font-size: 14px;">
-    Hey, I'm Ranger and I have updated and tested on 29th July 2024.The Script has been testing on Macbook Pro M3 using Python version 3.11.8. This is now a fully working operating deathstar.<br><span title="Death Star" style="font-size: 64px;">&#x1F311;</span><br>
+    Hey, I'm Ranger and I have updated and tested on 29th July 2024.The Script has been testing on Macbook Pro M3 using Python version 3.11.8. This is now a fully working operating deathstar.<br><br>
   </i>
 </p>
- 
-&nbsp;
+
+<p align="center"><img src="image.png" alt="DeathStar" width="50%">
+</p>
 
 <p align="center">
   <img src="https://count.getloli.com/get/@rangersmyth?theme=gelbooru" />
