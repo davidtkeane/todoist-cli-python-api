@@ -76,14 +76,16 @@ Here's how it works:
 
 This script provides a quick and easy way to manage your Todoist tasks from your terminal. It's especially useful if you prefer using the command line over a graphical user interface, or if you want to automate your task management with scripts.
 
-## 🚀 Installation
+## 🚀 Quick Installation Guide. More Detailed Guide Below.
 
-1. The install.py file is inside the Help_files folder.
-2. The requirements.txt file is inside the Help_files folder.
-3. Extra Help to install Todoist file is inside the Help_files folder. File name is todoist_install_help.md
-4. Get your API key. It's free. [Todoist Website to get your API Key](https://app.todoist.com/app/today)
-5. API Key test file todoist_api_test.py is inside the Help_files folder.
-6. After everything is installed you can start the script by this comand.
+1. git clone https://github.com/davidtkeane/todoist-cli-python-api.git
+2. cd todoist-cli-python-api/help_files.
+3. The install.py file is inside the Help_files folder.
+4. The requirements.txt file is inside the Help_files folder.
+5. Extra Help to install Todoist file is inside the Help_files folder. File name is todoist_install_help.md
+6. Get your API key. It's free. [Click here to get your Todoist API Key](https://app.todoist.com/app/today)
+7. API Key test file todoist_api_test.py is inside the Help_files folder.
+8. After everything is installed you can start the script by this comand.
    ```python
    python todoist.py
    ```
@@ -91,11 +93,11 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 ## 🥷 Where to get the Todoist API key.
 
 1. Login with a new account or old account.
-2. Then go to today [Todoist Website](https://app.todoist.com/app/today) for the API
+2. Then go to today [Todoist Website](https://app.todoist.com/app/today) for the API Key.
 3. Click your profile name and settings.
-4. Click Integrations
-5. Click Developer
-6. Copy API Token
+4. Click Integrations.
+5. Click Developer.
+6. Copy API Token.
 7. Add to API Key when the install.py asks for it. The .env file will be created if the file is not there.
 
 ## 💻 Developer API Documentation
