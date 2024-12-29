@@ -87,7 +87,9 @@ I had an idea if I could connect Todoist to my original todo_list program I made
 <br>
 
  
-## Help and Install Files Explained. More detailed instructions can be found below. Lots and lots! 
+## Help and Install Files Explained. 
+
+More detailed instructions can be found below. Lots and lots! 
 
 1. (todoist.py) This is the main file to run to get the todoist working in the terminal. It wont work right away as you need to install the requirements and also to get you Todoist API Key. It's Free!! If you are reading this first, then follow the steps below.  
 ```bash
