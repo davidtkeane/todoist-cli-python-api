@@ -89,7 +89,7 @@ I had an idea if I could connect Todoist to my original todo_list program I made
  
 ## Help and Install Files Explained. More detailed instructions can be found below. Lots and lots! 
 
-1. (install.py) This is the main file to run to get the todoist working in the terminal. It wont work right away as you need to install the requirements and also to get you Todoist API Key. It's Free!! If you are reading this first, then follow the steps below.  
+1. (todoist.py) This is the main file to run to get the todoist working in the terminal. It wont work right away as you need to install the requirements and also to get you Todoist API Key. It's Free!! If you are reading this first, then follow the steps below.  
 ```bash
 python todoist.py
 ```
@@ -106,7 +106,7 @@ pip install -r requirements.txt
 ```bash
 python todoist_api_test.py
 ```
-5. (usr-bin.sh) To be able to use todoist from the command line instead of having to goto the directory then type python todoist.py. The script will enable you to just type todoist in the terminal and the script will run. This script will copy todoist.py and send a copy to /usr/local/bin/todoist. This works on Macbook (Currently testing Windows and Linux). There is a slight modification to the todoist.py file which is saved in teh help_files folder.
+5. (usr-bin.sh) To be able to use todoist from the command line instead of having to goto the directory then type python todoist.py. The script will enable you to just type todoist in the terminal and the script will run. This script will copy todoist.py and send a copy to /usr/local/bin/todoist. This works on Macbook (Currently testing Windows and Linux). There is a slight modification to the todoist.py file which is saved in the help_files folder, and help on Windows and Linux is also located in the folder help_files/todoist_install_help.md.
 ```bash
 bash usr-bin.sh
 ```
