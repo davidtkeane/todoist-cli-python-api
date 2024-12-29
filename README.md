@@ -160,7 +160,9 @@ bash usr-bin.sh
    ```bash
    git clone https://github.com/davidtkeane/todoist-cli-python-api.git
    ```
+
 2. First. Click here for the [Todoist Website](https://app.todoist.com/app/today) and get your API Key, then Copy the Key.
+
 3. The Menu has instructions on how to find the API key shown below.
 
    ```
@@ -174,6 +176,7 @@ bash usr-bin.sh
    ```
 4. Run the install.py file. This will tell you if you have the modules needed installed.
 5. You only need to run install_todoist.py once per install. 
+
    ```bash
    python install.py
    ```
@@ -189,15 +192,15 @@ bash usr-bin.sh
 
    ![1722278365823](image/1722278365823.png)
 
-10. If the modules are not installed, it will asked you to install The todoist module is not installed.
-   Do you want to install todoist? This module is safe and used by millions. (y/n)
-   Press y for yes.
+10. If the modules are not installed, it will asked you to install The todoist module is not installed. 
+   Do you want to install todoist? 
+   This module is safe and used by millions. (y/n) Press y for yes.
 
-   ![1722276030408](image/1722276030408.png)
+      ![1722276030408](image/1722276030408.png)
 
 11. The script will then run the todoist_api_test.py file to establish if you are able to connect to Todo
 
-   ![1722278633930](image/1722278633930.png)
+      ![1722278633930](image/1722278633930.png)
 
 12. Press y for yes run the script.
 
@@ -206,8 +209,7 @@ bash usr-bin.sh
    ```bash
    python todoist.py
    ```
-
-   ![1722276435961](image/1722276435961.png)
+      ![1722276435961](image/1722276435961.png)
 
 ## 📖 Usage
 
