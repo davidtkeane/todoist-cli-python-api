@@ -191,8 +191,8 @@ bash usr-bin.sh
 
 10. If the modules are not installed, it will asked you to install The todoist module is not installed.
    Do you want to install todoist? This module is safe and used by millions. (y/n)
+   Press y for yes.
 
-   * Press y for yes.
    ![1722276030408](image/1722276030408.png)
 
 11. The script will then run the todoist_api_test.py file to establish if you are able to connect to Todo
