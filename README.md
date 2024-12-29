@@ -178,12 +178,13 @@ bash usr-bin.sh
    python install.py
    ```
 6. You will get this menu.
+
    ![1722274706166](image/1722274706166.png)
 7. The script will ask you for the Todoist API key in the terminal, then that is sent into the .env file for you.
 8. It shows you that The following modules are required:
 9. If the modules are installed it will say, if not it will ask you to install them.
 
-![1722278365823](image/1722278365823.png)
+   ![1722278365823](image/1722278365823.png)
 
 8. If the modules are not installed, it will asked you to install The todoist module is not installed.
    Do you want to install todoist? This module is safe and used by millions. (y/n)
@@ -198,7 +199,7 @@ bash usr-bin.sh
 
    The Normal way to run the app after the install will be
 
-   ```
+   ```bash
    python todoist.py
    ```
 
@@ -208,9 +209,9 @@ bash usr-bin.sh
 
 To use the `todoist.py` script, you can run the following command in PowerShell or Linux/Mac terminal:
 
-```powershell
 Run the script from your terminal with the following command:
 
+```bash
 python todoist.py
 ```
 
