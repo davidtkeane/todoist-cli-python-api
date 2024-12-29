@@ -101,90 +101,195 @@ except Exception as error:
 ]
 ```
 
-Making the Script Executable and Adding it to the PATH
+Okay, let's break down how to enhance your script to be OS-aware, manage your Todoist API key securely, and make it executable from the terminal.
+
+**1. OS Detection and Conditional Execution**
+
+We'll use the `platform` module to detect the operating system and then execute OS-specific code blocks.
+
+```python
+import platform
+import os
+import sys
+from todoist_api_python.api import TodoistAPI
+from colorama import Fore, Style, init
+
+# Initialize colorama
+init(autoreset=True)
+
+def get_todoist_tasks(api):
+    """Fetches and prints Todoist tasks."""
+    try:
+        tasks = api.get_tasks()
+        print(f"{Fore.CYAN}Your Todoist tasks:")
+        for task in tasks:
+            print(f"{Style.BRIGHT}- {task.content}")
+    except Exception as e:
+        print(f"{Fore.RED}Error fetching tasks: {e}")
+        sys.exit(1)
+
+def main():
+    """Main function to handle OS detection and task fetching."""
+    api = TodoistAPI("YOUR_TODOIST_API_KEY") # API key handling
+    current_os = platform.system()
+
+    if current_os == "Windows":
+        print(f"{Fore.GREEN}Detected OS: Windows")
+        # Windows-specific code here (if needed)
+
+    elif current_os == "Darwin":  # Darwin is the system name for macOS
+        print(f"{Fore.GREEN}Detected OS: macOS")
+        # macOS-specific code here (if needed)
+
+    elif current_os == "Linux":
+        print(f"{Fore.GREEN}Detected OS: Linux")
+        # Linux-specific code here (if needed)
+
+    else:
+        print(f"{Fore.YELLOW}Unsupported OS: {current_os}")
+        sys.exit(1)
+
+    get_todoist_tasks(api)
+
+if __name__ == "__main__":
+    main()
+```
+
+**2. Todoist API Key and .env File Management**
+
+Here's how to manage your API key:
+
+*   **Using .env (Recommended for Development):**
+    1.  **Create a .env file:** In the same directory as your `todoist.py` script (or a parent directory), create a file named `.env`.
+    2.  **Add your API key:** Inside `.env`, add the following line:
+        ```
+        TODOIST_API_KEY=YOUR_ACTUAL_API_KEY
+        ```
+        Replace `YOUR_ACTUAL_API_KEY` with your real Todoist API key.
+    3.  **Install dotenv package:**
+        ```bash
+        pip install python-dotenv
+        ```
+    4.  **Use `python-dotenv` in your script:**
+        ```python
+        import os
+        from dotenv import load_dotenv
+
+        # Load .env file
+        load_dotenv()
+
+        # Get API key from environment variable
+        api_key = os.getenv("TODOIST_API_KEY")
+
+        # Check if API key is set
+        if api_key:
+            api = TodoistAPI(api_key)
+        else:
+            print("Error: TODOIST_API_KEY environment variable not set.")
+            exit()
+        ```
+
+*   **Directly in the Script (Not Recommended):**
+    *   You've already done this by replacing the `load_dotenv()` part with `api = TodoistAPI("YOUR_TODOIST_API_KEY")`. This is okay for quick testing but not secure for production or sharing your code.
+
+*   **Using Environment Variables Directly (Recommended for Production):**
+    1.  **Set the environment variable:**
+        *   **Windows:**
+            ```bash
+            setx TODOIST_API_KEY "YOUR_ACTUAL_API_KEY"
+            ```
+        *   **macOS/Linux:**
+            ```bash
+            export TODOIST_API_KEY="YOUR_ACTUAL_API_KEY"
+            ```
+            (You might want to add this to your `~/.bashrc`, `~/.zshrc`, or equivalent shell configuration file to make it persistent across sessions).
+    2.  **Use `os.getenv()` in your script:** You can use the code snippet from the `.env` method, but you won't need to install or use `python-dotenv`.
+
+**3. Making the Script Executable and Adding it to the PATH**
 
 Here's how to make your script easily runnable from the terminal:
 
-Steps (macOS/Linux):
+**Steps (macOS/Linux):**
 
-Add Shebang:
+1.  **Add Shebang:**
+    *   At the very top of your `todoist.py` file, add the following shebang line:
 
-At the very top of your todoist.py file, add the following shebang line:
+        ```bash
+        #!/usr/bin/env python3
+        ```
 
-Bash
+        This tells the system to use the Python 3 interpreter to run the script.
 
-#!/usr/bin/env python3
-This tells the system to use the Python 3 interpreter to run the script.
+2.  **Make the Script Executable:**
+    *   Use the `chmod` command in your terminal:
 
-Make the Script Executable:
+        ```bash
+        chmod +x /path/to/your/todoist.py
+        ```
 
-Use the chmod command in your terminal:
+        Replace `/path/to/your/todoist.py` with the actual path to your script.
 
-Bash
+3.  **Move to `/usr/local/bin/` (Recommended):**
+    *   This directory is typically already in your `PATH`. Move your script there:
 
-chmod +x /path/to/your/todoist.py
-Replace /path/to/your/todoist.py with the actual path to your script.
+        ```bash
+        sudo mv /path/to/your/todoist.py /usr/local/bin/todoist
+        ```
+        You are using `todoist` as the executable name for your script.
+        If you have a `todoist` folder, you can move it to `/usr/local/bin` like so:
+        ```bash
+        sudo mv /path/to/your/todoist /usr/local/bin/
+        ```
+        Then create a symbolic link:
+        ```bash
+        sudo ln -s /usr/local/bin/todoist/todoist.py /usr/local/bin/todoist
+        ```
 
-Move to /usr/local/bin/ (Recommended):
+**Steps (Windows):**
 
-This directory is typically already in your PATH. Move your script there:
+1.  **Add .py Extension to PATHEXT:**
+    1.  Search for "environment variables" in the Start Menu and select "Edit the system environment variables."
+    2.  Click "Environment Variables...".
+    3.  Under "System variables," select `PATHEXT` and click "Edit...".
+    4.  Add `; .PY` to the end of the variable value (make sure there's a semicolon separating it from the previous entry).
+    5.  Click "OK" on all open windows.
 
-Bash
+2.  **Move Script to a Directory in PATH:**
+    *   You can move your `todoist.py` script to a directory that's already in your `PATH` environment variable (e.g., `C:\Windows\System32`, but this is generally not recommended for user scripts).
+    *   **Better:** Create a new directory for your scripts (e.g., `C:\Users\YourUserName\bin` or `C:\scripts`) and add that directory to your `PATH` environment variable (similar to how you edited `PATHEXT`).
 
-sudo mv /path/to/your/todoist.py /usr/local/bin/todoist
-You are using todoist as the executable name for your script.
-If you have a todoist folder, you can move it to /usr/local/bin like so:
-
-Bash
-
-sudo mv /path/to/your/todoist /usr/local/bin/
-Then create a symbolic link:
-
-Bash
-
-sudo ln -s /usr/local/bin/todoist/todoist.py /usr/local/bin/todoist
-Steps (Windows):
-
-Add .py Extension to PATHEXT:
-
-Search for "environment variables" in the Start Menu and select "Edit the system environment variables."
-Click "Environment Variables...".
-Under "System variables," select PATHEXT and click "Edit...".
-Add ; .PY to the end of the variable value (make sure there's a semicolon separating it from the previous entry).
-Click "OK" on all open windows.
-Move Script to a Directory in PATH:
-
-You can move your todoist.py script to a directory that's already in your PATH environment variable (e.g., C:\Windows\System32, but this is generally not recommended for user scripts).
-Better: Create a new directory for your scripts (e.g., C:\Users\YourUserName\bin or C:\scripts) and add that directory to your PATH environment variable (similar to how you edited PATHEXT).
-4. Running the Script
+**4. Running the Script**
 
 After completing the steps above:
 
-macOS/Linux:
+*   **macOS/Linux:**
+    *   Open your terminal and simply type:
 
-Open your terminal and simply type:
+        ```bash
+        todoist
+        ```
 
-Bash
+*   **Windows:**
+    *   Open a command prompt or PowerShell and type:
 
-todoist
-Windows:
+        ```bash
+        todoist.py
+        ```
 
-Open a command prompt or PowerShell and type:
+        Or, if you followed the `PATHEXT` method, you can just type:
 
-Bash
+        ```bash
+        todoist
+        ```
 
-todoist.py
-Or, if you followed the PATHEXT method, you can just type:
+**Best Way Forward**
 
-Bash
+1.  **OS Detection:** Use the `platform` module as outlined above.
+2.  **API Key:**
+    *   **Development:** Use a `.env` file for convenience.
+    *   **Production:** Set the `TODOIST_API_KEY` environment variable directly in your system's environment.
+3.  **Executable:**
+    *   **macOS/Linux:** Use shebang, `chmod +x`, and move to `/usr/local/bin/`.
+    *   **Windows:** Add `.PY` to `PATHEXT` and move the script to a directory in your `PATH`.
 
-todoist
-Best Way Forward
-
-OS Detection: Use the platform module as outlined above.
-API Key:
-Development: Use a .env file for convenience.
-Production: Set the TODOIST_API_KEY environment variable directly in your system's environment.
-Executable:
-macOS/Linux: Use shebang, chmod +x, and move to /usr/local/bin/.
-Windows: Add .PY to PATHEXT and move the script to a directory in your PATH.
+This detailed guide will help you create a robust and user-friendly Todoist script! Let me know if you have more questions.
