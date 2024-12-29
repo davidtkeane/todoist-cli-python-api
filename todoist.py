@@ -1,9 +1,14 @@
 # renamed to todoist.py from main.py
 
-from todoist_api_python.api import TodoistAPI
-from dotenv import load_dotenv
 import os
 import webbrowser
+import sys
+
+from todoist_api_python.api import TodoistAPI
+from dotenv import load_dotenv
+from colorama import init, Fore, Style
+
+init(autoreset=True)  # Initialize colorama for colored terminal text
 
 # Load the .env file
 load_dotenv()
@@ -13,8 +18,6 @@ api_key = os.getenv("TODOIST_API_KEY")
 
 # Use the API key
 api = TodoistAPI(api_key)
-
-init(autoreset=True)  # Initialize colorama for colored terminal text
 
 def print_projects(projects):
     for project in projects:
