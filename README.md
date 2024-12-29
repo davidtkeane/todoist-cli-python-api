@@ -127,12 +127,13 @@ bash usr-bin.sh
 6. Get your API key. It's free. [Click here to get your Todoist API Key](https://app.todoist.com/app/today)
 7. Add API Key into the .env file 'TODOIST_API_KEY=YourKey'.
 8. Then test the API key with the file todoist_api_test.py which is inside the Help_files folder.
-   ```
-   python todoist_api_test.py
 
+   ```bash
+   python todoist_api_test.py
    ```
 9. After everything is installed you can start the script by this comand.
-   ```python
+
+   ```bash
    python todoist.py
    ```
 
@@ -154,12 +155,14 @@ bash usr-bin.sh
 
 ## 🚀 Now we are ready to Install and launch
 
-1. Clone this repository to your local machine.
-   ```
-    git clone https://github.com/davidtkeane/todoist-cli-python-api.git
+1. Clone this repository to your local machine
+
+   ```bash
+   git clone https://github.com/davidtkeane/todoist-cli-python-api.git
    ```
 2. First. Click here for the [Todoist Website](https://app.todoist.com/app/today) and get your API Key, then Copy the Key.
 3. The Menu has instructions on how to find the API key shown below.
+
    ```
    1. Login with a new account or old account.
    2. Then go to today https://app.todoist.com/app/today
@@ -171,7 +174,7 @@ bash usr-bin.sh
    ```
 4. Run the install.py file. This will tell you if you have the modules needed installed.
 5. You only need to run install_todoist.py once per install. 
-   ```
+   ```bash
    python install.py
    ```
 6. You will get this menu.
