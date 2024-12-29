@@ -180,22 +180,26 @@ bash usr-bin.sh
 6. You will get this menu.
 
    ![1722274706166](image/1722274706166.png)
+
 7. The script will ask you for the Todoist API key in the terminal, then that is sent into the .env file for you.
+
 8. It shows you that The following modules are required:
+
 9. If the modules are installed it will say, if not it will ask you to install them.
 
    ![1722278365823](image/1722278365823.png)
 
-8. If the modules are not installed, it will asked you to install The todoist module is not installed.
+10. If the modules are not installed, it will asked you to install The todoist module is not installed.
    Do you want to install todoist? This module is safe and used by millions. (y/n)
 
    * Press y for yes.
-   * ![1722276030408](image/1722276030408.png)
+   ![1722276030408](image/1722276030408.png)
 
-     9. The script will then run the todoist_api_test.py file to establish if you are able to connect to Todo
+11. The script will then run the todoist_api_test.py file to establish if you are able to connect to Todo
 
    ![1722278633930](image/1722278633930.png)
-9. Press y for yes run the script.
+
+12. Press y for yes run the script.
 
    The Normal way to run the app after the install will be
 
@@ -219,22 +223,22 @@ python todoist.py
 
 ==============================
 
-1. List projects
-2. Add project
-3. Delete project
-4. List tasks
-5. Add task
-6. Update task
-7. Close task
-8. Reopen task
-9. Delete task
+ 1. List projects
+ 2. Add project
+ 3. Delete project
+ 4. List tasks
+ 5. Add task
+ 6. Update task
+ 7. Close task
+ 8. Reopen task
+ 9. Delete task
 10. List comments
 11. Add comment
 12. Update comment
 13. Delete comment
 14. View today's tasks online
 15. View projects online
-16. Exit
+ 0. Exit
 
 ## 🛠️ Functions
 
