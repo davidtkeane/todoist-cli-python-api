@@ -106,10 +106,12 @@ pip install -r requirements.txt
 ```bash
 python todoist_api_test.py
 ```
-5. (usr-bin.sh) To be able to use todoist from the command line instead of having to goto the directory then type python todoist.py. The script will enable you to just type todoist in the terminal and the script will run. This script will copy todoist.py and send a copy to /usr/local/bin/todoist. This works on Macbook (Currently testing Windows and Linux). There is a slight modification 
+5. (usr-bin.sh) To be able to use todoist from the command line instead of having to goto the directory then type python todoist.py. The script will enable you to just type todoist in the terminal and the script will run. This script will copy todoist.py and send a copy to /usr/local/bin/todoist. This works on Macbook (Currently testing Windows and Linux). There is a slight modification to the todoist.py file which is saved in teh help_files folder.
 ```bash
 bash usr-bin.sh
 ```
+6. (/help_files/todoist.py) This version of todoist.py is for sending into the /usr/local/bin/ folder so you can run todoist on the command line. This file will be used for usr-bin.sh.
+
 <br>
 <br>
 

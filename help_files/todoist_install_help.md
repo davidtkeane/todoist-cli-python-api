@@ -100,3 +100,91 @@ except Exception as error:
     )
 ]
 ```
+
+Making the Script Executable and Adding it to the PATH
+
+Here's how to make your script easily runnable from the terminal:
+
+Steps (macOS/Linux):
+
+Add Shebang:
+
+At the very top of your todoist.py file, add the following shebang line:
+
+Bash
+
+#!/usr/bin/env python3
+This tells the system to use the Python 3 interpreter to run the script.
+
+Make the Script Executable:
+
+Use the chmod command in your terminal:
+
+Bash
+
+chmod +x /path/to/your/todoist.py
+Replace /path/to/your/todoist.py with the actual path to your script.
+
+Move to /usr/local/bin/ (Recommended):
+
+This directory is typically already in your PATH. Move your script there:
+
+Bash
+
+sudo mv /path/to/your/todoist.py /usr/local/bin/todoist
+You are using todoist as the executable name for your script.
+If you have a todoist folder, you can move it to /usr/local/bin like so:
+
+Bash
+
+sudo mv /path/to/your/todoist /usr/local/bin/
+Then create a symbolic link:
+
+Bash
+
+sudo ln -s /usr/local/bin/todoist/todoist.py /usr/local/bin/todoist
+Steps (Windows):
+
+Add .py Extension to PATHEXT:
+
+Search for "environment variables" in the Start Menu and select "Edit the system environment variables."
+Click "Environment Variables...".
+Under "System variables," select PATHEXT and click "Edit...".
+Add ; .PY to the end of the variable value (make sure there's a semicolon separating it from the previous entry).
+Click "OK" on all open windows.
+Move Script to a Directory in PATH:
+
+You can move your todoist.py script to a directory that's already in your PATH environment variable (e.g., C:\Windows\System32, but this is generally not recommended for user scripts).
+Better: Create a new directory for your scripts (e.g., C:\Users\YourUserName\bin or C:\scripts) and add that directory to your PATH environment variable (similar to how you edited PATHEXT).
+4. Running the Script
+
+After completing the steps above:
+
+macOS/Linux:
+
+Open your terminal and simply type:
+
+Bash
+
+todoist
+Windows:
+
+Open a command prompt or PowerShell and type:
+
+Bash
+
+todoist.py
+Or, if you followed the PATHEXT method, you can just type:
+
+Bash
+
+todoist
+Best Way Forward
+
+OS Detection: Use the platform module as outlined above.
+API Key:
+Development: Use a .env file for convenience.
+Production: Set the TODOIST_API_KEY environment variable directly in your system's environment.
+Executable:
+macOS/Linux: Use shebang, chmod +x, and move to /usr/local/bin/.
+Windows: Add .PY to PATHEXT and move the script to a directory in your PATH.

@@ -1,7 +1,13 @@
 #!/usr/bin/env python3 # This is the default python shebang.
 #!/Users/ranger/.pyenv/shims/python3 # <-- This is my shebang actual path. Check with "which python" in terminal, then replace.
 
-# This version of todoist.py is for sending into the /usr/local/bin/ folder so you can run todoist on the command line and you will then 
+# Created by Ranger
+
+# This version of todoist.py is for sending into the /usr/local/bin/ folder so you can run todoist on the command line.
+# Run the script bash usr-bin.sh and it will do some magic and afterwards you will need to refresh your terminal to take effect.
+# More help will be in the todoist_install_help.md file
+# More information in the README.md file also. Lots of info!
+
 
 import os
 import webbrowser

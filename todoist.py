@@ -1,5 +1,6 @@
 #!/usr/bin/env python3 # This is the default python shebang.
 #!/Users/ranger/.pyenv/shims/python3 # <-- This is my shebang actual path. Check with "which python" in terminal, then replace.
+# Created by Ranger
 
 import os
 import webbrowser
