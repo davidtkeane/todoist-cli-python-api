@@ -209,7 +209,7 @@ bash usr-bin.sh
    ```bash
    python todoist.py
    ```
-      ![1722276435961](image/1722276435961.png)
+   ![1722276435961](image/1722276435961.png)
 
 ## 📖 Usage
 
