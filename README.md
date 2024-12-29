@@ -33,7 +33,6 @@
 </div>
 
 <br>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Microsoft-Windows%2011-0078D6?logo=windows&logoColor=0078D6&labelColor=white" alt="Windows 11">
   <img src="https://img.shields.io/badge/Apple-macOS-000000?logo=apple&logoColor=white&labelColor=black" alt="macOS">
@@ -43,13 +42,13 @@
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/davidtkeane/todoist-cli-python-api?style=flat&color=blue&link=https%3A%2F%2Fshields.io" alt="GitHub last commit">
   <img src="https://img.shields.io/github/commit-activity/w/davidtkeane/todoist-cli-python-api?authorFilter=davidtkeane" alt="GitHub commit activity">
-  <a href="http://badges.mit-license.org/"><img src="https://camo.githubusercontent.com/a3ab4cecb6e0664ac7c82a19cab38b6efc4df6086df1d2d212f02d49925d4269/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265" alt="License" data-canonical-src="http://img.shields.io/:license-mit-blue.svg?style=flat-square"></a>
 </p>
 
 ## 🧐 About
 
 <img src="https://sm.pcmag.com/t/pcmag_uk/review/t/todoist/todoist_wpyr.1920.jpg" alt="Todoist" class="center">
-
+<br>
+<br>
 <p style="text-align: center;">
 <a href="https://todoist.com/">Sign up for a Todoist account</a>
 </p>
@@ -57,7 +56,8 @@
         Todoist is a powerful task management app that helps you organize your life. With Todoist, you can create tasks and projects, set due dates and priorities, and even assign tasks to others. Todoist syncs across all your devices, so you can manage your tasks wherever you are. It also integrates with many other apps and services, including Gmail, Google Calendar, Slack, Amazon Alexa, and more. Whether you're managing a team, writing an epic screenplay, or just making a grocery list, Todoist is there to help you achieve more every day.
 </p>
 
-I had an idea if I could connect Todoist to my original todo_list program I made (Not uploaded yet) for Powershell, the Powershell todo_list was finished, and I thought if I could connect my todo_list to Todoist. This script does not do that, this script is to let you control your Todoist from the terminal or command line. This script lets you do most things available with this code. I copied and pasted all the code from the Todoist API guide, and with the help of GitHUb CoPilot we arrived at this script. Please enjoy and upgrade and own it.
+<br>
+<br>
 
 The Todoist CLI is a Python script that interacts with the Todoist API to provide a command-line interface for managing your Todoist tasks.
 
@@ -75,6 +75,43 @@ Here's how it works:
 6. After performing an operation, it goes back to step 3, unless you choose to exit the script.
 
 This script provides a quick and easy way to manage your Todoist tasks from your terminal. It's especially useful if you prefer using the command line over a graphical user interface, or if you want to automate your task management with scripts.
+
+<br>
+<br>
+
+## Idea
+
+I had an idea if I could connect Todoist to my original todo_list program I made (Not uploaded yet) for Powershell, the Powershell todo_list was finished, and I thought if I could connect my todo_list to Todoist. This script does not do that, this script is to let you control your Todoist from the terminal or command line. This script lets you do most things available with this code. I copied and pasted all the code from the Todoist API guide, and with the help of GitHUb CoPilot we arrived at this script. Please enjoy and upgrade and own it.
+
+<br>
+<br>
+
+ 
+## Help and Install Files Explained. More detailed instructions can be found below. Lots and lots! 
+
+1. (install.py) This is the main file to run to get the todoist working in the terminal. It wont work right away as you need to install the requirements and also to get you Todoist API Key. It's Free!! If you are reading this first, then follow the steps below.  
+```bash
+python todoist.py
+```
+2. (install.py) Install the todoist script with one command. The script will ask you questions, make files for the script to work. 
+```bash
+python install.py
+```
+3. (requirements.txt) This file is for installing modules that make the script work. If you want to install manually then use this command
+```bash
+pip install -r requirements.txt
+```
+4. (todoist_api_test.py) This will test you Todoist API Key without running the main script.
+   Just add your API key to the .env file TODOIST_API_KEY="Putyourkeyinhere"
+```bash
+python todoist_api_test.py
+```
+5. (usr-bin.sh) To be able to use todoist from the command line instead of having to goto the directory then type python todoist.py. The script will enable you to just type todoist in the terminal and the script will run. This script will copy todoist.py and send a copy to /usr/local/bin/todoist. This works on Macbook (Currently testing Windows and Linux). There is a slight modification 
+```bash
+bash usr-bin.sh
+```
+<br>
+<br>
 
 ## 🚀 Quick Installation Guide. More Detailed Guide Below.
 
@@ -114,13 +151,11 @@ This script provides a quick and easy way to manage your Todoist tasks from your
 ## 🚀 Now we are ready to Install and launch
 
 1. Clone this repository to your local machine.
-
    ```
     git clone https://github.com/davidtkeane/todoist-cli-python-api.git
    ```
 2. First. Click here for the [Todoist Website](https://app.todoist.com/app/today) and get your API Key, then Copy the Key.
 3. The Menu has instructions on how to find the API key shown below.
-
    ```
    1. Login with a new account or old account.
    2. Then go to today https://app.todoist.com/app/today
@@ -132,12 +167,10 @@ This script provides a quick and easy way to manage your Todoist tasks from your
    ```
 4. Run the install.py file. This will tell you if you have the modules needed installed.
 5. You only need to run install_todoist.py once per install. 
-
    ```
    python install.py
    ```
 6. You will get this menu.
-
    ![1722274706166](image/1722274706166.png)
 7. The script will ask you for the Todoist API key in the terminal, then that is sent into the .env file for you.
 8. It shows you that The following modules are required:

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# Created by Ranger
 
 from todoist_api_python.api import TodoistAPI
 from dotenv import load_dotenv

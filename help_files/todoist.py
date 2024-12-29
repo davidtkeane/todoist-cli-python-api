@@ -1,6 +1,8 @@
 #!/usr/bin/env python3 # This is the default python shebang.
 #!/Users/ranger/.pyenv/shims/python3 # <-- This is my shebang actual path. Check with "which python" in terminal, then replace.
 
+# This version of todoist.py is for sending into the /usr/local/bin/ folder so you can run todoist on the command line and you will then 
+
 import os
 import webbrowser
 import sys
@@ -12,14 +14,7 @@ from colorama import init, Fore, Style
 
 init(autoreset=True)  # Initialize colorama for colored terminal text
 
-# Load environment variables
-load_dotenv() # Load the .env file
-
-api_key = os.getenv("TODOIST_API_KEY") # Get the API key
-if not api_key:
-    print(f"{Fore.RED}Error: TODOIST_API_KEY not found in .env file. Please set it.")
-    sys.exit(1)
-api = TodoistAPI(api_key) # Use the API key
+api = TodoistAPI("Add you API Key into this.")
 
 def get_todoist_tasks(api):
     """Fetches and prints Todoist tasks."""
